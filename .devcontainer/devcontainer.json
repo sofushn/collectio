@@ -9,7 +9,7 @@
 	"mounts": [
 		"source=${localWorkspaceFolderBasename}-node_modules,target=${containerWorkspaceFolder}/src/collectio-app/node_modules,type=volume"
 	],
-	"postCreateCommand": "sudo chown node src/collectio-app/node_modules",
+	"postCreateCommand": "sudo chown node src/collectio-app/node_modules && bun install --cwd src/collectio-app",
 	"workspaceFolder": "/workspace",
 	"features": {
 		"ghcr.io/devcontainers/features/git:1": {}
