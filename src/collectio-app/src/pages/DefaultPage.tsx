@@ -1,7 +1,6 @@
 import React from "react";
 import "./DefaultPage.css";
-import Header from "../components/Header";
-import CollectionCard from "@/components/CollectionCard";
+import {Header, Jumbotron, CollectionCard} from '@/components';
 
 const DefaultPage: React.FC = () => {
   const collections = Array(6).fill({ title: "DVD'er", image: "" });
@@ -12,12 +11,7 @@ const DefaultPage: React.FC = () => {
       <Header title="Collect.IO" description="For keeping track of your collections"/>
 
       {/* Jumbotron Section */}
-      <div className="jumbotron">
-        <h2 className="jumbotron-title">Welcome to Your Collection!</h2>
-        <p className="jumbotron-text">
-          Browse through your curated items and explore your favorites.
-        </p>
-      </div>
+      <Jumbotron title="Welcome to your collection!" description="Browse through your curated items and explore your favorites"/>
 
       {/* Collections Section */}
       <div className="grid grid-cols-3 auto-cols-max auto-rows-max">

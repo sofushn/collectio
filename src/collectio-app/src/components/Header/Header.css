@@ -1,0 +1,26 @@
+.header {
+  background-color: #f6f4f4; /* Light grey background */
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 0; /* Remove border radius for full-width */
+  top: 0;
+  left: 0;
+  z-index: 100; /* Ensure the header stays above other elements */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
+.header-title {
+  font-size: 32px;
+  font-family: "Lucida Console";
+  font-weight: bold;
+  margin: 0;
+}
+
+
+.header-description {
+  font-size: 16px;
+  font-weight: bold;
+  font-family: "Courier New";
+  margin: 0;
+}

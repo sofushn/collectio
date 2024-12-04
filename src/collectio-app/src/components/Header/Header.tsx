@@ -7,7 +7,7 @@ export interface HeaderProps {
 
 const Header = (props: HeaderProps) => {
   return (
-    <header className="header gradient">
+    <header className="header">
       <h1 className="header-title">{props.title}</h1>
       <p className="header-description">{props.description}</p>
     </header>

@@ -1,0 +1,23 @@
+  .jumbotron {
+    padding: 50px 20px;
+    text-align: center;
+    margin-bottom: 20px; /* Space between the jumbotron and the container */
+  }
+  
+  .jumbotron-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .jumbotron-text {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+  }
+
+.gradient {
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(89, 146, 207, 0.427));
+  top: 0;
+  left: 0;
+}

@@ -1,33 +1,13 @@
 #root {
+  background-color: #f6f4f4; /* Light grey background */
   max-width: 1280px;
   margin: 0 auto;
   padding: 0;
-  background-color: #F5F5DC; /* Beige background */
   font-family: Arial, sans-serif;
   color: #000;
   position: relative;
   min-height: 100vh; /* Ensure the page takes full height */
   overflow-x: hidden; /* Avoid horizontal scrolling */
-}
-.jumbotron {
-  background-color: #EEE8AA; /* Light beige background */
-  padding: 50px 20px;
-  text-align: center;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
-  margin-bottom: 20px; /* Space between the jumbotron and the container */
-}
-
-.jumbotron-title {
-  font-size: 28px;
-  font-weight: bold;
-  margin: 0;
-}
-
-.jumbotron-text {
-  font-size: 18px;
-  color: #555;
-  margin-top: 10px;
 }
 
 /* Main content container */
