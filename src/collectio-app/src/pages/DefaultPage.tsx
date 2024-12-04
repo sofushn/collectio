@@ -9,11 +9,7 @@ const DefaultPage: React.FC = () => {
   return (
     <div id="root">
       {/* Header */}
-      <Header
-        title="Home"
-        subtitle="My collections"
-        description="Overview of my collections"
-      />
+      <Header title="Collect.IO" description="For keeping track of your collections"/>
 
       {/* Jumbotron Section */}
       <div className="jumbotron">
@@ -24,11 +20,11 @@ const DefaultPage: React.FC = () => {
       </div>
 
       {/* Collections Section */}
-        <div className="grid grid-cols-3 auto-cols-max auto-rows-max">
-          {collections.map((item, index) => (
-              <CollectionCard title={item.title} description="TEST" key={index}/>
-          ))}
-        </div>
+      <div className="grid grid-cols-3 auto-cols-max auto-rows-max">
+        {collections.map((item, index) => (
+          <CollectionCard title={item.title} description="TEST" key={index} />
+        ))}
+      </div>
     </div>
   );
 };

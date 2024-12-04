@@ -1,11 +1,12 @@
 import {
   Card,
   CardDescription,
-  CardFooter,
   CardHeader,
+  CardContent,
   CardTitle,
 } from "@/components/ui/card";
-import './CollectionCard.css';
+import { Button } from "@/components/ui/button";
+import "./CollectionCard.css";
 
 export interface CardProps {
   title: string;
@@ -19,9 +20,9 @@ const CollectionCard = (props: CardProps) => {
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>{" "}
       </CardHeader>
-      <CardFooter>
-        <p>Card Footer</p>
-      </CardFooter>
+      <CardContent>
+        <Button variant="outline">Open collection</Button>
+      </CardContent>
     </Card>
   );
 };

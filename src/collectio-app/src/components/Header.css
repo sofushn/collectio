@@ -12,6 +12,7 @@
   
   .header-title {
     font-size: 32px;
+    font-family: 'Lucida Console';
     font-weight: bold;
     margin: 0;
   }
@@ -23,8 +24,15 @@
   }
   
   .header-description {
-    font-size: 16px;
-    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Courier New';
     margin: 0;
   }
+
+  .gradient {
+    background-image: linear-gradient(to right, rgba(224, 242, 254, 0.431), rgba(2, 44, 34, 0.427));
+    top: 0;
+    left: 0;
+}
   
