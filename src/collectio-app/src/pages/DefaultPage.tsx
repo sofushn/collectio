@@ -1,33 +1,36 @@
-import { useState } from 'react'
-import reactLogo from '../assets/react.svg'
-import viteLogo from '/vite.svg'
-import './DefaultPage.css'
+import React from "react";
+import "./DefaultPage.css";
+import Header from "../components/Header";
+import CollectionCard from "@/components/CollectionCard";
 
-export default function DefaultPage() {
-  const [count, setCount] = useState(0)
+const DefaultPage: React.FC = () => {
+  const collections = Array(6).fill({ title: "DVD'er", image: "" });
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
+    <div id="root">
+      {/* Header */}
+      <Header
+        title="Home"
+        subtitle="My collections"
+        description="Overview of my collections"
+      />
+
+      {/* Jumbotron Section */}
+      <div className="jumbotron">
+        <h2 className="jumbotron-title">Welcome to Your Collection!</h2>
+        <p className="jumbotron-text">
+          Browse through your curated items and explore your favorites.
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+
+      {/* Collections Section */}
+        <div className="grid grid-cols-3 auto-cols-max auto-rows-max">
+          {collections.map((item, index) => (
+              <CollectionCard title={item.title} description="TEST" key={index}/>
+          ))}
+        </div>
+    </div>
+  );
+};
+
+export default DefaultPage;
