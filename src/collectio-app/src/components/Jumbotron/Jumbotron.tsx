@@ -1,4 +1,5 @@
 import "./Jumbotron.css";
+import logo from "@/assets/image_transparent.png"
 
 export interface JumbotronProps {
   title: string;
@@ -10,7 +11,7 @@ const Jumbotron = (props: JumbotronProps) => {
     <div className="jumbotron gradient">
       <h2 className="jumbotron-title">{props.title}</h2>
       <p className="jumbotron-text">{props.description}</p>
-      <img src="/image_transparent.png" alt="Test"/>
+      <img src={logo} alt="Test"/>
     </div>
   );
 };

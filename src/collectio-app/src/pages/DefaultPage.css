@@ -79,6 +79,10 @@
   background-color: #D2B48C; /* Tan color on hover */
 }
 
+.collections-section {
+  box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.5); /* Add a subtle shadow */
+}
+
 /* Responsive styles */
 @media (max-width: 768px) {
   .header-title {

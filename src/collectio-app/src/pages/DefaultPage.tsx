@@ -14,7 +14,7 @@ const DefaultPage: React.FC = () => {
       <Jumbotron title="Welcome to your collection!" description="Browse through your curated items and explore your favorites"/>
 
       {/* Collections Section */}
-      <div className="grid grid-cols-3 auto-cols-max auto-rows-max">
+      <div className="grid grid-cols-3 auto-cols-max auto-rows-max collections-section">
         {collections.map((item, index) => (
           <CollectionCard title={item.title} description="TEST" key={index} />
         ))}
