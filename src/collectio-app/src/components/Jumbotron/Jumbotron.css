@@ -1,5 +1,6 @@
   .jumbotron {
     padding: 50px 20px;
+    padding-left: 100px;
     text-align: center;
   }
   
@@ -19,4 +20,12 @@
   background-image: linear-gradient(to right, rgb(255, 255, 255), rgba(89, 146, 207, 0.427));
   top: 0;
   left: 0;
+}
+
+.jumbotron-text-div {
+  margin-top: 15%;
+}
+
+.jumbotron-img {
+  max-width: 250px !important;
 }

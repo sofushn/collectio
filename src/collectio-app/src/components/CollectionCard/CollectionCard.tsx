@@ -15,14 +15,18 @@ export interface CardProps {
 
 const CollectionCard = (props: CardProps) => {
   return (
-    <Card className="collection-card">
+    <Card className="w-[200px] collection-card collection-card-gradiant">
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>{" "}
       </CardHeader>
+    
+
       <CardContent>
-        <Button variant="outline">Open collection</Button>
+      <Button className="collection-card-btn" variant="outline">Open</Button>
       </CardContent>
+      
+      
     </Card>
   );
 };
