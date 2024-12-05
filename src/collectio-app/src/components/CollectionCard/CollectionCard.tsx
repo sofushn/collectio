@@ -7,6 +7,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import "./CollectionCard.css";
+import { Link } from "react-router";
 
 export interface CardProps {
   title: string;
@@ -15,18 +16,19 @@ export interface CardProps {
 
 const CollectionCard = (props: CardProps) => {
   return (
-    <Card className="w-[200px] collection-card collection-card-gradiant">
+    <Card className="w-[200px] collection-card collection-card-gradiant shadow ">
       <CardHeader>
         <CardTitle>{props.title}</CardTitle>
         <CardDescription>{props.description}</CardDescription>{" "}
       </CardHeader>
-    
 
       <CardContent>
-      <Button className="collection-card-btn" variant="outline">Open</Button>
+        <Link to={"/collection"}>
+          <Button className="collection-card-btn" variant="outline">
+            Open
+          </Button>
+        </Link>
       </CardContent>
-      
-      
     </Card>
   );
 };

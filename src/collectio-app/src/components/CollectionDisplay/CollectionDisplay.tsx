@@ -2,7 +2,7 @@ import { CollectionCard, CollectionMenu } from "@/components";
 import './CollectionDisplay.css';
 
 const CollectionDisplay = () => {
-  const collections = Array(10).fill({ title: "My collection", description: "Lorem ipsum dorem itsum" });
+  const collections = Array(12).fill({ title: "My collection", description: "Lorem ipsum dorem itsum" });
 
   return (
     <div className="collections-section">

@@ -8,7 +8,7 @@ export interface JumbotronProps {
 
 const Jumbotron = (props: JumbotronProps) => {
   return (
-    <div className="jumbotron gradient grid grid-cols-2 gap-4">
+    <div className="jumbotron gradient grid grid-cols-2 gap-4 shadow shadow-inner">
       <div className="jumbotron-text-div">
         <h2 className="jumbotron-title">{props.title}</h2>
         <p className="jumbotron-text">{props.description}</p>
